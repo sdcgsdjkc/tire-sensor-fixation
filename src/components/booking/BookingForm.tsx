@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -197,7 +196,6 @@ export default function BookingForm() {
                         <SelectItem value="programming">Прошивка датчиков</SelectItem>
                         <SelectItem value="replacement">Замена датчиков</SelectItem>
                         <SelectItem value="diagnostics">Диагностика TPMS</SelectItem>
-                        <SelectItem value="battery">Замена батарей</SelectItem>
                         <SelectItem value="clone">Клонирование датчиков</SelectItem>
                         <SelectItem value="other">Другое</SelectItem>
                       </SelectContent>
@@ -287,3 +285,4 @@ export default function BookingForm() {
     </div>
   );
 }
+

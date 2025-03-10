@@ -1,7 +1,7 @@
 
 import { SectionHeading } from '@/components/ui/section-heading';
 import { FeatureCard } from '@/components/ui/feature-card';
-import { ShieldCheck, Clock, Settings, Gauge, Car, Battery } from 'lucide-react';
+import { ShieldCheck, Clock, Settings, Gauge, Car, Package } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '../ui/button';
 
@@ -10,7 +10,7 @@ export default function Features() {
     {
       icon: <Gauge size={24} />,
       title: 'Прошивка датчиков давления',
-      description: 'Профессиональная прошивка TPMS датчиков для всех марок и моделей автомобилей с гарантией качества.',
+      description: 'Профессиональная прошивка TPMS датчиков для всех марок и моделей автомобилей. Стоимость прошивки всего 2500 тенге.',
     },
     {
       icon: <Car size={24} />,
@@ -18,14 +18,14 @@ export default function Features() {
       description: 'Создание точных копий оригинальных датчиков для экономии при замене.',
     },
     {
-      icon: <Settings size={24} />,
+      icon: <Package size={24} />,
       title: 'Продажа комплектующих',
-      description: 'Широкий выбор оригинальных и совместимых датчиков TPMS и запчастей для них.',
+      description: 'Широкий выбор датчиков TPMS по выгодной цене. Датчик стоит 15000 тенге.',
     },
     {
-      icon: <Battery size={24} />,
-      title: 'Замена батарей',
-      description: 'Замена элементов питания в датчиках TPMS с сохранением всех настроек и функций.',
+      icon: <Settings size={24} />,
+      title: 'Сервис в Усть-Каменогорске',
+      description: 'Обслуживаем клиентов в Усть-Каменогорске и Восточно-Казахстанской области.',
     },
     {
       icon: <Clock size={24} />,
@@ -44,7 +44,7 @@ export default function Features() {
       <div className="container">
         <SectionHeading
           title="Наши услуги"
-          subtitle="Полный спектр услуг по продаже, прошивке и клонированию датчиков давления в шинах"
+          subtitle="Продажа, прошивка и клонирование датчиков давления в шинах TPMS"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -50,8 +50,8 @@ export default function BookingPage() {
               <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary mb-4">
                 <Clock size={24} />
               </div>
-              <h3 className="text-xl font-medium mb-2">Быстрый сервис</h3>
-              <p className="text-muted-foreground">Обслуживание занимает от 30 до 60 минут в зависимости от марки и модели автомобиля.</p>
+              <h3 className="text-xl font-medium mb-2">Доступные цены</h3>
+              <p className="text-muted-foreground">Прошивка датчиков всего за 2500 тенге, новый датчик за 15000 тенге. Выгодные цены в Усть-Каменогорске.</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl border border-border">
