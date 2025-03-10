@@ -1,6 +1,7 @@
 
 import BookingForm from '@/components/booking/BookingForm';
 import { SectionHeading } from '@/components/ui/section-heading';
+import { Settings, Clock, Car } from 'lucide-react';
 
 export default function BookingPage() {
   return (
