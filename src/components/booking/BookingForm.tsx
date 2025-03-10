@@ -24,7 +24,6 @@ const carBrands = [
   "Volkswagen", "Volvo", "ВАЗ", "ГАЗ", "УАЗ"
 ];
 
-// Создаем массив годов от текущего до 2000
 const currentYear = new Date().getFullYear();
 const years = Array.from({ length: currentYear - 1999 }, (_, i) => (currentYear - i).toString());
 
@@ -237,7 +236,6 @@ export default function BookingForm() {
                         selected={field.value}
                         onSelect={field.onChange}
                         disabled={(date) => {
-                          // Нельзя выбрать прошедшие дни или воскресенье
                           const day = date.getDay();
                           const today = new Date();
                           today.setHours(0, 0, 0, 0);
@@ -285,4 +283,3 @@ export default function BookingForm() {
     </div>
   );
 }
-

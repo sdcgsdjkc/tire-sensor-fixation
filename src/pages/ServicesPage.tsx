@@ -1,7 +1,7 @@
 import { SectionHeading } from '@/components/ui/section-heading';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Check, Car, Settings, Gauge, Battery, AlertTriangle } from 'lucide-react';
+import { Check, Car, Settings, Gauge, AlertTriangle } from 'lucide-react';
 
 export default function ServicesPage() {
   const services = [
@@ -15,7 +15,7 @@ export default function ServicesPage() {
         'Профессиональное оборудование',
         'Гарантия на выполненные работы'
       ],
-      price: 'от 1 500 ₽',
+      price: '2 500 тенге',
     },
     {
       icon: <Car size={24} />,
@@ -27,19 +27,7 @@ export default function ServicesPage() {
         'Проверка срока службы датчиков',
         'Рекомендации по обслуживанию'
       ],
-      price: 'от 800 ₽',
-    },
-    {
-      icon: <Battery size={24} />,
-      title: 'Замена батарей в датчиках',
-      description: 'Замена элементов питания в датчиках давления с последующей прошивкой и калибровкой. Продлите срок службы ваших датчиков TPMS без необходимости их полной замены.',
-      benefits: [
-        'Увеличение срока службы датчиков',
-        'Использование качественных батарей',
-        'Проверка работоспособности после замены',
-        'Экономия на замене всего датчика'
-      ],
-      price: 'от 1 200 ₽',
+      price: 'от 1 000 тенге',
     },
     {
       icon: <Settings size={24} />,
@@ -51,7 +39,7 @@ export default function ServicesPage() {
         'Полная калибровка после установки',
         'Гарантия 1 год'
       ],
-      price: 'от 2 500 ₽',
+      price: '15 000 тенге',
     },
     {
       icon: <AlertTriangle size={24} />,
@@ -63,7 +51,7 @@ export default function ServicesPage() {
         'Решение проблем совместимости',
         'Консультация по предотвращению проблем'
       ],
-      price: 'от 1 000 ₽',
+      price: 'от 1 000 тенге',
     },
   ];
 
