@@ -1,8 +1,7 @@
-
 import { SectionHeading } from '@/components/ui/section-heading';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Check, Car, Tool, Gauge, Battery, AlertTriangle } from 'lucide-react';
+import { Check, Car, Settings, Gauge, Battery, AlertTriangle } from 'lucide-react';
 
 export default function ServicesPage() {
   const services = [
@@ -43,7 +42,7 @@ export default function ServicesPage() {
       price: 'от 1 200 ₽',
     },
     {
-      icon: <Tool size={24} />,
+      icon: <Settings size={24} />,
       title: 'Установка новых датчиков',
       description: 'Профессиональная установка и программирование новых датчиков давления при невозможности ремонта существующих или по желанию клиента.',
       benefits: [

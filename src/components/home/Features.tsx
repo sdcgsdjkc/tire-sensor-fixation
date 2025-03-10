@@ -1,7 +1,9 @@
 
 import { SectionHeading } from '@/components/ui/section-heading';
 import { FeatureCard } from '@/components/ui/feature-card';
-import { ShieldCheck, Clock, Wrench, Gauge } from 'lucide-react';
+import { ShieldCheck, Clock, Settings, Gauge, Car, Battery } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from '../ui/button';
 
 export default function Features() {
   const features = [
@@ -11,9 +13,19 @@ export default function Features() {
       description: 'Профессиональная прошивка TPMS датчиков для всех марок и моделей автомобилей с гарантией качества.',
     },
     {
-      icon: <Wrench size={24} />,
-      title: 'Замена датчиков',
-      description: 'Установка и замена датчиков давления в шинах с полной калибровкой и настройкой.',
+      icon: <Car size={24} />,
+      title: 'Клонирование датчиков',
+      description: 'Создание точных копий оригинальных датчиков для экономии при замене.',
+    },
+    {
+      icon: <Settings size={24} />,
+      title: 'Продажа комплектующих',
+      description: 'Широкий выбор оригинальных и совместимых датчиков TPMS и запчастей для них.',
+    },
+    {
+      icon: <Battery size={24} />,
+      title: 'Замена батарей',
+      description: 'Замена элементов питания в датчиках TPMS с сохранением всех настроек и функций.',
     },
     {
       icon: <Clock size={24} />,
@@ -22,7 +34,7 @@ export default function Features() {
     },
     {
       icon: <ShieldCheck size={24} />,
-      title: 'Гарантированный результат',
+      title: 'Гарантия качества',
       description: 'Предоставляем гарантию на все работы и используем только сертифицированное оборудование.',
     },
   ];
@@ -32,10 +44,10 @@ export default function Features() {
       <div className="container">
         <SectionHeading
           title="Наши услуги"
-          subtitle="Мы предлагаем полный спектр услуг по прошивке и программированию датчиков давления в шинах"
+          subtitle="Полный спектр услуг по продаже, прошивке и клонированию датчиков давления в шинах"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -46,6 +58,12 @@ export default function Features() {
               style={{ animationDelay: `${index * 100}ms` }}
             />
           ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <Button asChild size="lg">
+            <Link to="/booking">Записаться на сервис</Link>
+          </Button>
         </div>
       </div>
     </section>
